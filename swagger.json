@@ -1,0 +1,863 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "defaultDescription",
+        "version": "0.1",
+        "title": "defaultTitle"
+    },
+    "paths": {
+        "/connexion": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model4"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"pseudo\":\"stef\",\r\n    \"motDePasse\":\"never-guess-it\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model5"
+                        }
+                    }
+                }
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33/commandes/60a97d6cb090fc714065aa37": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model10"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            },
+            "put": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model3"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"dateArrivee\": \"2021-05-12\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model9"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            },
+            "delete": {
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33/commandes/60a97d6cb090fc714065aa37/plats/60a97cddb090fc714065aa36": {
+            "put": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model7"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            },
+            "delete": {
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33/commandes/60a97d6cb090fc714065aa37/plats": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model6"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33/commandes/60a97d6cb090fc714065aa37/livreur": {
+            "put": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model0"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"_id\":\"60a97c0eb090fc714065aa34\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model8"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33/commandes": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model1"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"dateArrivee\": \"2021-05-08\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model11"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/livreurs/60a97c0eb090fc714065aa34": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model12"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/livreurs": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model0"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"nom\": \"joy\",\r\n    \"prenom\":\"patrick\",\r\n    \"voiture\": \"Tesla\",\r\n    \"quartier\":\"The Street\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model13"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers/60a97a01b090fc714065aa33": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model14"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/usagers": {
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model1"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"nom\": \"joy\",\r\n    \"prenom\":\"patrick\",\r\n    \"adresse\": \"2000 boul laurier\",\r\n    \"pseudo\": \"stef\",\r\n    \"motDePasse\":\"never-guess-it\"\r\n}"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model15"
+                        }
+                    }
+                }
+            }
+        },
+        "/plats/60a97cddb090fc714065aa36": {
+            "get": {
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model16"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/plats": {
+            "get": {
+                "produces": [
+                    "text/html"
+                ],
+                "parameters": [],
+                "responses": {
+                    "500": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            },
+            "post": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "required": false,
+                    "schema": {
+                        "$ref": "#/definitions/Model2"
+                    },
+                    "x-examples": {
+                        "application/json": "{\r\n    \"nom\": \"poutine\",\r\n    \"nbrPortions\":2\r\n}"
+                    }
+                }],
+                "responses": {
+                    "201": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "$ref": "#/definitions/Model17"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            },
+            "options": {
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        },
+        "/{param0}/{param1}": {
+            "delete": {
+                "consumes": [
+                    "application/json"
+                ],
+                "parameters": [{
+                        "name": "param0",
+                        "in": "path",
+                        "description": "Example values form path are: 'livreurs' and 'plats'",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "param1",
+                        "in": "path",
+                        "description": "Example values form path are: '60a97c0eb090fc714065aa34' and '60a97cddb090fc714065aa36'",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Definition generated from Swagger Inspector",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "security": [{
+                    "Secured": []
+                }]
+            }
+        }
+    },
+    "securityDefinitions": {
+        "Secured": {
+            "type": "oauth2",
+            "authorizationUrl": "https://example.com",
+            "flow": "implicit",
+            "scopes": {}
+        }
+    },
+    "definitions": {
+        "Model0": {
+            "properties": {
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "voiture": {
+                    "type": "string"
+                },
+                "quartier": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model1": {
+            "properties": {
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model2": {
+            "properties": {
+                "nom": {
+                    "type": "string"
+                },
+                "nbrPortions": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model3": {
+            "properties": {
+                "dateArrivee": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model4": {
+            "properties": {
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model5": {
+            "properties": {
+                "token": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model6": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Model7": {
+            "properties": {
+                "Plats": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "_id": {
+                    "type": "string"
+                },
+                "dateArrivee": {
+                    "type": "string"
+                },
+                "Usager": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "Livreur": {
+                    "type": "string"
+                }
+            }
+        },
+        "Livreur": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "voiture": {
+                    "type": "string"
+                },
+                "quartier": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model8": {
+            "properties": {
+                "Plats": {
+                    "type": "array"
+                },
+                "_id": {
+                    "type": "string"
+                },
+                "dateArrivee": {
+                    "type": "string"
+                },
+                "Usager": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "Livreur": {
+                    "$ref": "#/definitions/Livreur"
+                }
+            }
+        },
+        "Model9": {
+            "properties": {
+                "Plats": {
+                    "type": "array"
+                },
+                "_id": {
+                    "type": "string"
+                },
+                "dateArrivee": {
+                    "type": "string"
+                },
+                "Usager": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model10": {
+            "properties": {
+                "Plats": {
+                    "type": "array"
+                },
+                "_id": {
+                    "type": "string"
+                },
+                "dateArrivee": {
+                    "type": "string"
+                },
+                "Usager": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Usager": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model11": {
+            "properties": {
+                "Plats": {
+                    "type": "array"
+                },
+                "_id": {
+                    "type": "string"
+                },
+                "dateArrivee": {
+                    "type": "string"
+                },
+                "Usager": {
+                    "$ref": "#/definitions/Usager"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model12": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "voiture": {
+                    "type": "string"
+                },
+                "quartier": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model13": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "voiture": {
+                    "type": "string"
+                },
+                "quartier": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model14": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Model15": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "prenom": {
+                    "type": "string"
+                },
+                "adresse": {
+                    "type": "string"
+                },
+                "pseudo": {
+                    "type": "string"
+                },
+                "motDePasse": {
+                    "type": "string"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "Links": {
+            "properties": {
+                "rel": {
+                    "type": "string"
+                },
+                "method": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "href": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model16": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "nbrPortions": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Links"
+                    }
+                }
+            }
+        },
+        "Model17_Links": {
+            "properties": {
+                "rel": {
+                    "type": "string"
+                },
+                "method": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "href": {
+                    "type": "string"
+                }
+            }
+        },
+        "Model17": {
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "nom": {
+                    "type": "string"
+                },
+                "nbrPortions": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "__v": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Model17_Links"
+                    }
+                }
+            }
+        }
+    }
+}
