@@ -8,7 +8,7 @@ var jwt = require('jsonwebtoken');
 var mongoose = require('mongoose');
 
 //connecter a mongo atlas
-mongoose.connect('mongodb+srv://joypatrick44:<GYxb4NSEBYQ1QF0A>@cluster0.ujgxq.mongodb.net/travail-pratique', {
+mongoose.connect('mongodb+srv://joypatrick44:GYxb4NSEBYQ1QF0A@cluster0.ujgxq.mongodb.net/travail-pratique', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10
