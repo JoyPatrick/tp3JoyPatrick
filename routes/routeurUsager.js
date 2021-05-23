@@ -3,7 +3,7 @@
 var express = require('express');
 var routerApiUsager = express.Router();
 // var jwt = require('jsonwebtoken');
-var url_base = "https://tp3-joypatricknguefouet.herokuapp.com/";
+var url_base = "https://tp3-joypatricknguefouet.herokuapp.com";
 var jwt = require('jsonwebtoken');
 var mongoose = require('mongoose');
 
