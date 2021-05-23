@@ -3,13 +3,14 @@
 var express = require('express');
 var routerApiPlat = express.Router();
 // var jwt = require('jsonwebtoken');
-var url_base = "http://localhost:8090";
+var url_base = "https://tp3-joypatricknguefouet.herokuapp.com/";
 var cors = require('cors');
 var mongoose = require('mongoose');
 
 var jwt = require('jsonwebtoken');
 
-mongoose.connect('mongodb://localhost:27017/travail-pratique', {
+//connecter a mongo atlas
+mongoose.connect('mongodb+srv://joypatrick44:<MkzqUv#x6U6PZ!j>@cluster0.ujgxq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/travail-pratique', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10
@@ -49,10 +50,6 @@ function verifierAuthentification(req, callback) {
     }
 }
 
-// routerApiPlat.use(function (req, res, next) {
-//     console.log(req.method, req.url);
-//     next();
-// });
 
 routerApiPlat.use(function (req, res, next) {
     verifierAuthentification(req, function (estAuthentifie, jetonDecode) {
@@ -104,13 +101,13 @@ routerApiPlat.route('')
                     rel: "self",
                     method: "GET",
                     title: "obtention d'un plat",
-                    href: "http://localhost:8090/plats/" + nouveauPlats._id.toString()
+                    href: url_base+"/plats/" + nouveauPlats._id.toString()
                 },
                 {
                     rel: "delete",
                     method: "DELETE",
                     title: "suppression d un plat",
-                    href: "http://localhost:8090/plats/" + nouveauPlats._id.toString()
+                    href: url_base+"/plats/" + nouveauPlats._id.toString()
                 }
             ]);
         });
@@ -127,13 +124,13 @@ routerApiPlat.route('')
                         rel: "self",
                         method: "GET",
                         title: "obtenir un plat",
-                        href: "http://localhost:8090/plats/" + plat._id.toString()
+                        href: url_base+"/plats/" + plat._id.toString()
                     },
                     {
                         rel: "delete",
                         method: "DELETE",
                         title: "supprimer un plat",
-                        href: "http://localhost:8090/plats/" + plat._id.toString()
+                        href: url_base+"/plats/" + plat._id.toString()
                     }
                 ];
                 var platToJson = plat.toJSON();
@@ -162,7 +159,7 @@ routerApiPlat.route('/:plat_id')
                     rel: "delete",
                     method: "DELETE",
                     title: "supprimer un plat",
-                    href: "http://localhost:8090/plats/" + plat._id.toString()
+                    href: url_base+"/plats/" + plat._id.toString()
                 }]);
             else
                 res.status(404).end();

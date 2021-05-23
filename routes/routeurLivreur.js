@@ -3,11 +3,12 @@
 var express = require('express');
 var routerApiLivreur = express.Router();
 // var jwt = require('jsonwebtoken');
-var url_base = "http://localhost:8090";
+var url_base = "https://tp3-joypatricknguefouet.herokuapp.com/";
 var mongoose = require('mongoose');
 var jwt = require('jsonwebtoken');
 
-mongoose.connect('mongodb://localhost:27017/travail-pratique', {
+//connecter a mongo atlas
+mongoose.connect('mongodb+srv://joypatrick44:<MkzqUv#x6U6PZ!j>@cluster0.ujgxq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/travail-pratique', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     poolSize: 10
