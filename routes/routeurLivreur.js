@@ -3,7 +3,7 @@
 var express = require('express');
 var routerApiLivreur = express.Router();
 // var jwt = require('jsonwebtoken');
-var url_base = "https://tp3-joypatricknguefouet.herokuapp.com/";
+var url_base = "https://tp3-joypatricknguefouet.herokuapp.com";
 var mongoose = require('mongoose');
 var jwt = require('jsonwebtoken');
 
