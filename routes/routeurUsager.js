@@ -14,7 +14,6 @@ mongoose.connect('mongodb+srv://joypatrick44:<GYxb4NSEBYQ1QF0A>@cluster0.ujgxq.m
     poolSize: 10
 });
 
-
 var usagerModels = require('../models/usagerModel').usagerModel;
 var commandeModels = require('../models/commandeModel').commandeModel;
 var platModels = require('../models/platModel').platModel;
